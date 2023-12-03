@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="icon" type="image/png" href="assets/favicon.png"/>
+        <title>Wildcat 3D - Corporate Confidential Portal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <script src="script.js"></script>
+      <div id="backgroundOverlay"></div>
+      <div id="content">
+      <div id="header"></div>
+
+      <form action="terms.html">
+        <div class="form-element">
+        <label for="username">Corporate Confidential Portal</label>
+        <br/>
+        <p> </p>
+        <label for="username_or_email">Username or Email:</label>
+        <br>
+        <input type="text" placeholder="username or email"name="username_or_email" required>
+        </div>
+        <div class="form-element">
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" placeholder="password" id="passwordBox" required>
+                  </div>
+                  <div class="form-element">
+                    <button onclick="return checkPassword()" type="submit">Login</button>
+                    <p style="max-width: 300px; font-weight:bold; visibility: hidden;" id="errorMessage">Incorrect Username or Passowrd. Please try again. If this problem persists, contact IT Support.</p>
+                  </div>
+              </form>
+
+              <!-- Display the error message if it is not empty -->
+
+              <p style="color:black;">Don't have access? <a href="mailto:wcat3d@gmail.com">Request it!</a></p>
+          </div>
+      </body>
+
+      </html>
